@@ -35,12 +35,20 @@
             <option value="20">20</option>
             <option value="22">22</option>
         </select>
-        <span class="material-symbols-outlined">format_bold</span>
-        <span class="material-symbols-outlined">format_italic</span>
-        <span class="material-symbols-outlined">format_underlined</span>
-        <span class="material-symbols-outlined">format_align_left</span>
-        <span class="material-symbols-outlined">format_align_center</span>
-        <span class="material-symbols-outlined">format_align_right</span>
+        <span class="material-symbols-outlined bold">format_bold</span>
+        <span class="material-symbols-outlined italic">format_italic</span>
+        <span class="material-symbols-outlined underline">format_underlined</span>
+        <span class="left material-symbols-outlined alignment">format_align_left</span>
+        <span class="center material-symbols-outlined alignment">format_align_center</span>
+        <span class="right material-symbols-outlined alignment">format_align_right</span>
+        <div class="color-prop">
+            <span class="material-symbols-outlined">format_color_text</span>
+            <input type="color" class="font-color-prop">
+        </div>
+        <div class="color-prop">
+            <span class="material-symbols-outlined">format_color_fill</span>
+            <input type="color" class="bg-color-prop">
+        </div>
     </div>
     <div class="formula-actions-cont">
         <input type="text" readonly class="address-bar">
@@ -64,7 +72,8 @@
             <div class="sheet-folder">Sheet1</div>
         </div>
     </div>
-    <script src="script.js"></script>
+    <script src="js/grid.js"></script>
+    <script src="js/cell-properties.js"></script>
 </body>
 
 </html>
