@@ -12,6 +12,9 @@ for (let i = 0; i < rows; i++) {
             alignment: "left",
             fontColor: '#000000',
             bgColor: '#ecf0f1',
+            value: "",
+            formula: "",
+            children: []
         }
         sheetRow.push(cellprop)
     }
@@ -41,7 +44,7 @@ let inactiveColorProp = "#ecf0f1";
 function decodeRidCidFromAddress(address) {
     let cid = Number(address.charCodeAt(0)) - 65;
     let rid = Number(address.slice(1)) - 1;
-    return [cid, rid];
+    return [rid, cid];
 }
 
 function activeCell(address) {
@@ -186,6 +189,9 @@ function addListenerToAttachCellProperties(cell) {
                 rightAlign.style.backgroundColor = inactiveColorProp;
                 break;
         }
+        let formulaBar = document.querySelector(".formula-bar");
+        formulaBar.value = cellProp.formula;
+        cell.value = cellProp.value;
 
     })
 }
