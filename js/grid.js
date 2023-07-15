@@ -44,7 +44,3 @@ function addListenerForAddressBarDisplay(cell, i, j) {
         addressBar.value = colAdd + rowAdd;
     })
 }
-
-let firstCell = document.querySelector(".cell");
-firstCell.click();
-firstCell.focus();
