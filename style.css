@@ -16,8 +16,13 @@ body {
 }
 
 .page-action {
-    margin: 0.5rem;
+    padding: 0.5rem 0.8rem;
     color: #f1f2f6;
+}
+
+.selected-page-action {
+    background-color: #f1f2f6;
+    color: #218c74;
 }
 
 .cellprop-actions-cont {
